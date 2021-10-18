@@ -10,7 +10,7 @@
 <body>
   <div class="container">
       
-    <form class="form__personal-info">
+    <form class="form__personal-info" action="" method="post">
       <fieldset>
         <legend>Personal information</legend>
         <div class="form__surname">
@@ -36,7 +36,7 @@
       </fieldset>
     </form>
 
-    <form class="form__registration">
+    <form class="form__registration" action="" method="post">
       <fieldset>
         <legend>Registration</legend>
           <div class="form__email">
@@ -50,13 +50,18 @@
       </fieldset>
     </form>
 
-    <form class="form__facts">
+    <form class="form__facts" action="" method="post">
       <fieldset>
         <legend>An interesting fact about you!</legend>
         <div class="form__cats">
-          <label for="cats">Do you love cats? </label>
-          <input type="radio" id="cats" name="cats-yes" > Yes
-          <input type="radio" id="cats" name="cats-no" > No
+          <label>
+            Yes
+            <input type="radio" name="cats">
+          </label>
+          <label>
+            No
+            <input type="radio" name="cats">
+          </label>
         </div>
         <div class="form__color">
           <label for="color">What is your favorite color? </label>
@@ -81,7 +86,7 @@
       </fieldset>
     </form>
 
-    <form class="form__additional">
+    <form class="form__additional" action="" method="post">>
       <fieldset>
         <legend>Additional info</legend>
         <div class="form__comments">
@@ -98,7 +103,7 @@
       </fieldset>
     </form>
 
-    <button class="form__submit" onsubmit="onSubmit()">Submit</button>
+    <button type="submit" class="form__submit" onsubmit="onSubmit()">Submit</button>
   </div>
 </body>
 </html>
