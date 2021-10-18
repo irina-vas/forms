@@ -1,0 +1,17 @@
+.form__registration,
+.form__facts, 
+.form__additional {
+  margin-top: 10px;
+}
+
+.form__personal-info div, 
+.form__registration div, 
+.form__facts div, 
+.form__additional div {
+  padding-top: 10px;
+}
+
+
+input[type=number] {
+  appearance: textfield;
+}
